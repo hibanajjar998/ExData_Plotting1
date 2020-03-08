@@ -15,8 +15,7 @@ if (!file.exists("household_power_consumption.txt")) {
   unzip("raw_data.zip") 
 }
 
-# extract data o
-f February first and second
+# extract data of February first and second
 names <- c("Date", "Time", "Global_active_power", "Global_reactive_power", "Voltage", "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 data <-  read.table( "household_power_consumption.txt", nrows=2881, skip=66637, sep=";", col.names = names ) 
 
